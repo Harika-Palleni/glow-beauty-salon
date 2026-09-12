@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.6;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #c94f78;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #c94f78;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+
+    background-image: url("./images/salon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.small-title {
+    color: #c94f78;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: #8f3658;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    background: white;
+    color: #c94f78;
+    border: 2px solid #c94f78;
+}
+
+.secondary-button:hover {
+    background: #c94f78;
+    color: white;
+}
+
+.hero div {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: #8f3658;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: #c94f78;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #a83e62;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- COMMON SECTION ---------- */
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #8f3658;
+    margin-bottom: 20px;
+}
+
+section > p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+}
+
+
+/* ---------- SERVICES ---------- */
+
+.services {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #8f3658;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+.card strong {
+    display: block;
+    color: #c94f78;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* ---------- REVIEWS ---------- */
+
+#reviews {
+    background: #fff6f9;
+}
+
+.reviews {
+    max-width: 1000px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.reviews .card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.reviews .card strong {
+    font-size: 16px;
+}
+
+.reviews .card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.reviews .card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ---------- CONTACT ---------- */
+
+#contact {
+    background: #fff;
+}
+
+#contact p {
+    margin: 10px 0;
+    color: #555;
+}
+
+#contact .button {
+    margin-top: 20px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #fff0f5;
+    color: #666;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .services,
+    .reviews {
+        grid-template-columns: 1fr;
+    }
+}
+/* Appointment Section */
+#appointment {
+    padding: 70px 20px;
+    text-align: center;
+    background: #fff5f7;
+}
+
+#appointment h2 {
+    color: #8b2942;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+#appointmentForm {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#appointmentForm input,
+#appointmentForm select {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#appointmentForm button {
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background: #d94f72;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#appointmentForm button:hover {
+    background: #b83d5c;
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        grid-template-columns: 1fr;
+        margin: 30px 20px;
+    }
+
+    .reviews .card {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>Glow Beauty Salon</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">WELCOME TO GLOW BEAUTY SALON</p>
+
+        <h1>Feel Beautiful.<br>Feel Confident.</h1>
+
+        <p>
+            Professional beauty and salon services
+            designed to make you look and feel your best.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#appointment" class="button">
+                Book an Appointment
+            </a>
+
+            <a href="#services" class="button secondary-button">
+                Explore Services
+            </a>
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+
+        <p>
+            Glow Beauty Salon provides professional beauty
+            services in a comfortable and friendly environment.
+            Our experienced team is here to help you look and
+            feel your best.
+        </p>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>Haircut</h3>
+                <p>Professional haircut and styling.</p>
+                <strong>₹300</strong>
+            </div>
+
+            <div class="card">
+                <h3>Hair Styling</h3>
+                <p>Beautiful styling for every occasion.</p>
+                <strong>₹500</strong>
+            </div>
+
+            <div class="card">
+                <h3>Facial</h3>
+                <p>Relaxing facial treatment for glowing skin.</p>
+                <strong>₹800</strong>
+            </div>
+
+            <div class="card">
+                <h3>Manicure</h3>
+                <p>Professional nail and hand care.</p>
+                <strong>₹400</strong>
+            </div>
+
+            <div class="card">
+                <h3>Pedicure</h3>
+                <p>Complete foot and nail care.</p>
+                <strong>₹500</strong>
+            </div>
+
+            <div class="card">
+                <h3>Bridal Makeup</h3>
+                <p>Complete bridal makeup package.</p>
+                <strong>₹5000</strong>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Gallery -->
+<section id="gallery">
+
+    <h2>Our Gallery</h2>
+
+    <p>
+        Take a look at our salon, beauty services and
+        transformations.
+    </p>
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="images/salon.jpg" alt="Glow Beauty Salon">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/salon2.webp" alt="Salon Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/salon3.webp" alt="Beauty Service">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/salon4.webp" alt="Hair Styling">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/salon5.webp" alt="Beauty Treatment">
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Reviews -->
+    <section id="reviews">
+        <h2>What Our Customers Say</h2>
+
+        <div class="reviews">
+
+            <div class="card">
+                <p>"Amazing service and friendly staff!"</p>
+                <strong>— Priya</strong>
+            </div>
+
+            <div class="card">
+                <p>"Very clean salon and excellent styling."</p>
+                <strong>— Ananya</strong>
+            </div>
+
+            <div class="card">
+                <p>"Loved my bridal makeup. Highly recommended!"</p>
+                <strong>— Sneha</strong>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>📍 Bangalore, Karnataka</p>
+        <p>📞 +91 63012 46887</p>
+        <p>🕐 Open: 10:00 AM – 8:00 PM</p>
+
+        <a
+            href="https://wa.me/916301246887"
+            class="button"
+            target="_blank">
+            Chat on WhatsApp
+        </a>
+    </section>
+
+    <!-- Appointment Form -->
+<section id="appointment">
+    <h2>Book an Appointment</h2>
+
+    <form id="appointmentForm">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <select id="service" required>
+            <option value="">Select Service</option>
+            <option>Haircut</option>
+            <option>Hair Styling</option>
+            <option>Facial</option>
+            <option>Manicure</option>
+            <option>Pedicure</option>
+            <option>Bridal Makeup</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <input type="time" id="time" required>
+
+        <button type="submit">Book Appointment</button>
+
+    </form>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Glow Beauty Salon. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
